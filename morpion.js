@@ -30,6 +30,9 @@ l_case.forEach((cellule) => {
                 const rejouer= document.getElementById("rejouer");
                 
                 rejouer.appendChild(button);
+                setTimeout(() => {
+                    button.classList.add('visible'); // Add the visible class after a delay
+                }, 50);
             }
         }
 
