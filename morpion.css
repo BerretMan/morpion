@@ -62,7 +62,7 @@ button {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     outline: none;
     transition: 250ms;
-    animation: appear 1s ease forwards;
+    opacity: 0; 
 }
 
 button:hover {
@@ -70,6 +70,11 @@ button:hover {
     transform: translateY(-2px);
     animation: glowing 1s infinite;
 
+}
+
+button.visible {
+    animation: appear 1s ease forwards;
+    opacity: 1; 
 }
 
 
